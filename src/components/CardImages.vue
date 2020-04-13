@@ -1,6 +1,6 @@
 <template>
   <v-col sm="6" elevation="6" cols="12">
-    <v-card>
+    <v-card class="justify-center" raised>
         <!-- TODO: Adicionar 'show-arrows' e tentar resolver bug de ambos 'prev/next'
                    estarem no mesmo lado
         -->

@@ -1,6 +1,6 @@
 <template>
-  <v-container class="back d-flex justify-center" fluid>
-    <v-row>
+  <v-container class="back d-flex justify-space-evenly" fluid>
+    <v-row class="stretch">
       <CardImages/>
       <CardWindowText/>
     </v-row>
