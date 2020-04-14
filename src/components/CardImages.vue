@@ -1,11 +1,9 @@
 <template>
-  <v-col sm="6" elevation="6" cols="12">
-    <v-card class="justify-center">
+  <v-col sm="6" cols="12">
+    <v-card raised>
       <v-carousel
-        class="mx-auto"
         cycle
-        height="500"
-        interval="5000"
+        height="526"
         :show-arrows=false
       >
         <v-carousel-item
@@ -14,9 +12,7 @@
         >
           <v-img
           :src="item.src"
-          max-height="800"
-          max-width="655"
-          aspect-ratio="1.3"
+          aspect-ratio="1.15"
           contain
           >
           </v-img>
@@ -34,9 +30,6 @@ export default {
       { src: require('@/assets/img/app1.png') },
       { src: require('@/assets/img/app2.png') },
       { src: require('@/assets/img/app3.png') }
-      // { src: require('@/assets/img/1.png') },
-      // { src: require('@/assets/img/2.png') },
-      // { src: require('@/assets/img/3.png') }
     ]
   })
 }

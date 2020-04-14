@@ -1,27 +1,26 @@
 <template>
   <v-col sm="6">
-      <v-row dense>
-        <v-col
-          cols="12"
-          sm="12"
-          elevation="6"
-          v-for="(item,i) in items"
-          :key="i"
-        >
-          <v-card
-            class="justify-center"
-            raised
-          >
-            <div class="d-flex flex-no-wrap justify-space-evenly">
-              <div>
-                <v-card-title class="justify-center" v-text="item.title"/>
-                <v-divider />
-                <v-card-subtitle v-text="item.text"/>
-              </div>
-            </div>
-          </v-card>
-        </v-col>
-      </v-row>
+    <v-row dense>
+      <v-col
+        cols="12"
+        v-for="(item,i) in items"
+        :key="i"
+      >
+        <v-card raised dark>
+          <div class="d-flex">
+            <v-card-title
+              id="bg-card-title"
+              v-text="item.title"
+            />
+            <v-divider />
+            <v-card-subtitle
+              id="bg-card-subtitle"
+              v-text="item.text"
+            />
+          </div>
+        </v-card>
+      </v-col>
+    </v-row>
   </v-col>
 </template>
 
@@ -35,7 +34,7 @@ export default {
         text: 'Serviços de alta qualidade com transparencia em todas as transações'
       },
       {
-        title: 'Taxa?',
+        title: 'Taxas?',
         text: 'Sem taxas adicionais ou qualquer outra tarifa nas suas transações'
       },
       {
@@ -52,4 +51,12 @@ export default {
 </script>
 
 <style>
+  #bg-card-title {
+    background: #4678D3;
+  }
+
+  #bg-card-subtitle {
+    background: whitesmoke;
+    color: black;
+  }
 </style>
