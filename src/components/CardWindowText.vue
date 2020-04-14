@@ -1,6 +1,5 @@
 <template>
   <v-col sm="6">
-    <!-- <v-card> -->
       <v-row dense>
         <v-col
           cols="12"
@@ -23,7 +22,6 @@
           </v-card>
         </v-col>
       </v-row>
-    <!-- </v-card> -->
   </v-col>
 </template>
 

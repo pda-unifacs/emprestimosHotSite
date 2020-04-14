@@ -1,16 +1,13 @@
 <template>
   <v-col sm="6" elevation="6" cols="12">
-    <v-card class="justify-center" raised>
-        <!-- TODO: Adicionar 'show-arrows' e tentar resolver bug de ambos 'prev/next'
-                   estarem no mesmo lado
-        -->
+    <v-card class="justify-center">
       <v-carousel
         class="mx-auto"
         cycle
-        :show-arrows=false
+        height="850"
         interval="3000"
+        :show-arrows=false
       >
-        <!-- TODO: Adicionar imagens quando terminar o prototipo das telas -->
         <v-carousel-item
           v-for="(item,i) in items"
           :key="i"
@@ -27,10 +24,9 @@ export default {
   name: 'CardImages',
   data: () => ({
     items: [
-      { src: '@/assets/img/img1.jpg' },
-      { src: '@/assets/img/2.jpg' },
-      { src: '@/assets/img/3.jpg' },
-      { src: '@/assets/img/4.jpg' }
+      { src: require('@/assets/img/app1.jpg') },
+      { src: require('@/assets/img/app2.jpg') },
+      { src: require('@/assets/img/app3.jpg') }
     ]
   })
 }
